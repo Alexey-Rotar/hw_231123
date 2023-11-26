@@ -1,9 +1,8 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
-public abstract class Employee implements Comparator<Employee> {
+public abstract class Employee {
     protected int number;
     protected String name;
     protected String position;
@@ -39,10 +38,5 @@ public abstract class Employee implements Comparator<Employee> {
 
     public void setPosition(String position) {
         this.position = position;
-    }
-
-    @Override
-    public int compare(Employee e1, Employee e2) {
-        return e1.getName().compareTo(e2.getName());
     }
 }
