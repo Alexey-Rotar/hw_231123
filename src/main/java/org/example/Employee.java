@@ -3,25 +3,26 @@ package org.example;
 import java.util.ArrayList;
 
 public abstract class Employee {
-    protected int number;
+    protected int id;
     protected String name;
     protected String position;
 
-    protected Employee(int number, String name, String position){
-        this.number = number;
+    protected Employee(int id, String name, String position){
+        this.id = id;
         this.name = name;
         this.position = position;
     }
+
     public static ArrayList<Employee> empList = new ArrayList<>();
 
     protected abstract float avgSalary();
 
-    public int getNumber() {
-        return number;
+    public int getId() {
+        return id;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

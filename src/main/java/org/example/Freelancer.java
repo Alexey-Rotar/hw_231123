@@ -3,8 +3,8 @@ package org.example;
 public class Freelancer extends Employee{
     private float hourlyRate;
 
-    protected Freelancer(int number, String name, String position, float hourlyRate) {
-        super(number, name, position);
+    public Freelancer(int id, String name, String position, float hourlyRate) {
+        super(id, name, position);
         this.hourlyRate = hourlyRate;
     }
 
