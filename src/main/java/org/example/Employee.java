@@ -13,8 +13,6 @@ public abstract class Employee {
         this.position = position;
     }
 
-    public static ArrayList<Employee> empList = new ArrayList<>();
-
     protected abstract float avgSalary();
 
     public int getId() {
